@@ -12,11 +12,11 @@ class Qr extends StatelessWidget {
           children: [
             Icon(Icons.account_circle,size: 30,),
 
-            QrImage(
-              data: '1234567890',
-
-              size: 200.0,
-            ),
+            // QrImage(
+            //   data: '1234567890',
+            //
+            //   size: 200.0,
+            // ),
           ],
         ),
       ),

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:qr_app/registration.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
+    return Scaffold(
           backgroundColor: Colors.teal,
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -34,8 +34,11 @@ class MyApp extends StatelessWidget {
                 height: 100,
               ),
               ElevatedButton(
-                style: ElevatedButton.styleFrom(primary: Colors.transparent),
-                onPressed: () {},
+                style: ElevatedButton.styleFrom(backgroundColor:  Colors.transparent),
+                onPressed: () {Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Registration()),
+                );},
                 child: Container(
                   width: 150,
                   height: 40,
@@ -51,6 +54,6 @@ class MyApp extends StatelessWidget {
 
             ],
           ),
-        ));
+        );
   }
 }

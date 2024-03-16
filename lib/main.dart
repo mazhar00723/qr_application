@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qr_app/qr.dart';
+import 'package:qr_app/registration.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Qr()
+      debugShowCheckedModeBanner: false,
+        home: Registration()
     );
   }
 }
