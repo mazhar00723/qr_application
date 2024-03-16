@@ -89,7 +89,7 @@ class _RegistrationState extends State<Registration> {
             obscureText: true,
             decoration: InputDecoration(
               border: OutlineInputBorder(),
-              labelText: 'Enter your password:',
+              labelText: 'Enter your password.:',
             ),
           ),
           SizedBox(
