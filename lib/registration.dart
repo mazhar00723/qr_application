@@ -26,8 +26,8 @@ class _RegistrationState extends State<Registration> {
         },
         body: jsonEncode({
           'name': _nameController.text,
-          'roll no': _rolnoController.text,
-          'e mail': _emailController.text,
+          'rollno': _rolnoController.text,
+          'email': _emailController.text,
           'password': _passwordController.text
         }));
     print(response.statusCode);
@@ -37,7 +37,7 @@ class _RegistrationState extends State<Registration> {
     if (response.statusCode == 200) {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const MyApp()),
+        MaterialPageRoute(builder: (context) => const Login()),
       );
     }
     else {
